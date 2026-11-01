@@ -1,0 +1,183 @@
+* {
+    --base-dark: #2a2b2aff;
+    --off-dark: #706c61ff;
+    --base-light: #f8f4e3ff;
+    --pink-dark: #dc7f9bff;
+    --pink-light: #f7a1c4ff;
+    --pink-light-opaque: rgba(247, 161, 196, 0.5);
+    color: var(--base-dark);
+    
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--base-light);
+    background-image: url('./assets/css-pattern-by-magicpattern.png');
+    background-blend-mode: soft-light;
+    transition: 0.16s ease;
+    background-size: cover;
+    padding: 16px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+header {
+    padding-top: 16px;
+    padding-bottom: 0px;
+    margin-bottom: 32px;
+}
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+}
+h1#name {
+    font-size: 48px;
+    padding: 0;
+    margin: 0;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+}
+h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+}
+h3.cardtitle {
+    margin-bottom: 0px;;
+}
+
+
+p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+p.artistname {
+    margin-top: 0px;;
+}
+
+/*
+p::first-letter {
+    font-size: 18px;
+}
+*/
+.title {
+    margin-bottom: 3rem;
+}
+.glance {
+    margin-bottom: 0rem;
+}
+.education {
+    margin-bottom: 6rem;
+}
+.favAlbums {
+    margin-bottom: 1rem;
+}
+.favGames {
+    margin-bottom: 6rem;
+}
+
+
+.cards {
+    margin-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+
+.card {
+    flex: 1 1 200px;
+    padding: 16px;
+    background-color: var(--base-light);
+    border-radius: 8px;
+    height: 150px;
+}
+.card:hover {
+    background-color: var(--pink-light);
+    box-shadow: 0 2px 2px rgba(22, 17, 21, 0.2);
+    border-radius: 24px;
+    transition: all 0.08s ease;
+    h3 {
+        font-size: 22px;
+        transition: all 0.08s ease;
+    }
+}
+.card#music {
+    height: 136px;
+}
+.card#games {
+    height: 136px;
+}
+.card#art {
+    height: 136px;
+}
+
+.card#album1 {
+    background-image: 
+    linear-gradient(240deg, var(--pink-light-opaque), var(--pink-light)),
+    url(./assets/Quadeca_Life_1.png);
+}
+.card#album1:hover {
+    background-image: 
+    linear-gradient(var(--pink-light), var(--pink-light)),
+    url(./assets/Quadeca_Life_1.png);
+}
+.card#album2 {
+    background-image: 
+    linear-gradient(240deg, var(--pink-light-opaque), var(--pink-light)),
+    url(./assets/marrow_brakence.jpg);
+}
+.card#album2:hover {
+    background-image: 
+    linear-gradient(var(--pink-light), var(--pink-light)),
+    url(./assets/marrow_brakence.jpg);
+}
+.card#album3 {
+    
+    background-image: 
+    linear-gradient(240deg, var(--pink-light-opaque), var(--pink-light)),
+    url(./assets/roisin_ciaran.jpg);
+}
+.card#album3:hover {
+    background-image: 
+    linear-gradient(var(--pink-light), var(--pink-light)),
+    url(./assets/roisin_ciaran.jpg);
+    /*
+    background-size: cover;
+    background-position: center;
+    */
+}
+
+
+.title {
+    /*
+    background-color: rgba(0, 15, 14, 0.021);
+    */
+}
+
+/*
+.title::first-letter {
+    font-size: 42px;
+}
+*/
+.education {
+    /*
+    background-color: var(--pink-light);
+    */
+}
+.education > ul{
+    font-size: 18px;
+    list-style-image: url('./assets/book.svg');
+}
+.education > ul li {
+    padding: 16px;
+}
+
+.year {
+    color: var(--pink-dark);
+}
